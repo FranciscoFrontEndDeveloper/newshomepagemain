@@ -24,9 +24,4 @@ export class NewsComponent {
   ];
   titleNews: string = 'titulo noticia';
   paragraphNews: string = 'parrafo noticia';
-  ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
-    console.log(this.newsArray.length);
-  }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-images',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./images.component.sass']
 })
 export class ImagesComponent {
-
+  @Input('imgPath') imgPath!: string ;
 }
