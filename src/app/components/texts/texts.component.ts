@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-texts',
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class TextsComponent {
   expression: boolean = true;
+  @Input('titleText') titleText: string = '';
+  @Input('paragraphText') paragraphText: string = '';
 }
