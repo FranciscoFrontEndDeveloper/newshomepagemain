@@ -9,6 +9,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { TitleComponent } from './components/title/title.component';
 import { NewsComponent } from './components/news/news.component';
 import { TopsComponent } from './components/tops/tops.component';
+import { TextsComponent } from './components/texts/texts.component';
+import { ImagesComponent } from './components/images/images.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { TopsComponent } from './components/tops/tops.component';
     MenuComponent,
     TitleComponent,
     NewsComponent,
-    TopsComponent
+    TopsComponent,
+    TextsComponent,
+    ImagesComponent
   ],
   imports: [
     BrowserModule,
