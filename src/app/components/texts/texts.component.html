@@ -1,13 +1,14 @@
 <div>
   <ng-container
-    *ngIf="titleText === 'The Bright Future of Web 3.0?'; else elseTemplate">
+    *ngIf="titleText === 'The Bright Future of Web 3.0?'; else elseTemplate"
+  >
     <h1 ngClass="titleClass">{{ titleText }}</h1>
   </ng-container>
   <ng-template #elseTemplate>
     <h3 ngClass="textClass">{{ titleText }}</h3>
   </ng-template>
 </div>
-<div>
+<div class="textContainer">
   <p class="paragraphClass">
     {{ paragraphText }}
   </p>

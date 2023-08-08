@@ -1,3 +1,4 @@
+@import '../../../styles'
 .homepageContainer
  width: 21rem
  height: 100%
@@ -11,6 +12,8 @@
   grid-area: title
  div:nth-child(3)
   grid-area: news
+  background: $Verydarkblue
+  padding: 20px
  div:nth-child(4)
   grid-area: top
 
@@ -21,6 +24,4 @@
   grid-template-rows: repeat(3,auto)
   grid-template-areas: 'menu menu menu' 'title title news' 'top top top'
 
-.homepage
-  &:__title
-    background: red
+
