@@ -1,14 +1,13 @@
-<div class="topsContainer" *ngFor="let Top of topsArray; let indexTops = index;">
-  <div>
+<div class="topsContainer" *ngFor="let Top of topsArray; let indexTops = index">
+  <div class="pruebaclase">
     <app-images [imgPath]="Top.imgTop"></app-images>
   </div>
-  <div >
+  <div>
     <div>
-      <p>0{{ indexTops + 1 }}</p>
+      <div>
+        <p>0{{ indexTops + 1 }}</p>
+      </div>
+      <app-texts [titleText]="Top.titletop" [paragraphText]="Top.paragraphtop"></app-texts>
     </div>
-    <app-texts
-      [titleText]="Top.titletop"
-      [paragraphText]="Top.paragraphtop"
-    ></app-texts>
   </div>
 </div>
