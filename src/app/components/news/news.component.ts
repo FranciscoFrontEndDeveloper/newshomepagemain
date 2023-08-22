@@ -22,6 +22,7 @@ export class NewsComponent {
         'Private funding by VC firms is down 50% YOY. We take a look at what that means.',
     },
   ];
-  titleNews: string = 'titulo noticia';
+  titleNews: boolean = true;
   paragraphNews: string = 'parrafo noticia';
+  
 }

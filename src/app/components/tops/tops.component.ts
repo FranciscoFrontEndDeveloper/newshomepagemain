@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-tops',
   templateUrl: './tops.component.html',
-  styleUrls: ['./tops.component.sass']
+  styleUrls: ['./tops.component.sass'],
 })
 export class TopsComponent {
   topsArray: any = [
@@ -15,16 +15,15 @@ export class TopsComponent {
     {
       imgTop: 'assets/image-top-laptops.jpg',
       titletop: 'Top 10 Laptops of 2022',
-      paragraphtop:
-        'Our best picks for various needs and budgets.',
+      paragraphtop: 'Our best picks for various needs and budgets.',
     },
     {
       imgTop: 'assets/image-gaming-growth.jpg',
       titletop: 'The Growth of Gaming',
-      paragraphtop:
-        'How the pandemic has sparked fresh opportunities.',
+      paragraphtop: 'How the pandemic has sparked fresh opportunities.',
     },
   ];
-  titleTops: string = 'titulo noticia';
+  titleTops: boolean = true;
   paragraphTops: string = 'parrafo noticia';
+  titleImgMain: boolean = false;
 }

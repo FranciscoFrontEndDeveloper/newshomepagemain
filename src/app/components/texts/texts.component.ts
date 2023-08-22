@@ -7,6 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class TextsComponent {
   expression: boolean = true;
+  sectionTitle: string = 'news';
   @Input('titleText') titleText: string = '';
   @Input('paragraphText') paragraphText: string = '';
+  @Input('textClassColor') textClassColor!: boolean  
 }

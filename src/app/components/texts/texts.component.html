@@ -5,7 +5,9 @@
     <h1 ngClass="titleClass">{{ titleText }}</h1>
   </ng-container>
   <ng-template #elseTemplate>
-    <h3 ngClass="textClass">{{ titleText }}</h3>
+    <h3 [ngClass]="textClassColor ? 'textClass' : 'textClassBlack'">
+      {{ titleText }}
+    </h3>
   </ng-template>
 </div>
 <div class="textContainer">

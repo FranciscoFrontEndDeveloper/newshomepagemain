@@ -6,5 +6,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./images.component.sass']
 })
 export class ImagesComponent {
-  @Input('imgPath') imgPath!: string ;
+  @Input('imgPath') imgPath!: string;
+  @Input('imageTopWidth') imageTopWidth!: boolean  
+ 
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    console.log(this.imageTopWidth)
+  }
 }
