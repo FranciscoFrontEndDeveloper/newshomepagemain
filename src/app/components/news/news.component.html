@@ -1,9 +1,13 @@
-<h2>New</h2>
-<div class="prueba">
-  <app-texts
-    *ngFor="let New of newsArray"
-    [titleText]="New.titlenew"
-    [paragraphText]="New.paragraphnew"
-    [textClassColor]="titleNews"
-  ></app-texts>
+<div class="containerNews">
+  <div>
+    <h2>New</h2>
+  </div>
+  <div class="prueba">
+    <app-texts
+      *ngFor="let New of newsArray"
+      [titleText]="New.titlenew"
+      [paragraphText]="New.paragraphnew"
+      [textClassColor]="titleNews"
+    ></app-texts>
+  </div>
 </div>
