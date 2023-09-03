@@ -11,6 +11,7 @@ import { NewsComponent } from './components/news/news.component';
 import { TopsComponent } from './components/tops/tops.component';
 import { TextsComponent } from './components/texts/texts.component';
 import { ImagesComponent } from './components/images/images.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ImagesComponent } from './components/images/images.component';
     NewsComponent,
     TopsComponent,
     TextsComponent,
-    ImagesComponent
+    ImagesComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
