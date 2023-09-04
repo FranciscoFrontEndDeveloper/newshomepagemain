@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu.component.sass']
 })
 export class MenuComponent {
+  activateMenu: boolean = true
 
+  showMenu() {
+    this.activateMenu = !this.activateMenu
+    console.log(this.activateMenu)
+  }
 }
