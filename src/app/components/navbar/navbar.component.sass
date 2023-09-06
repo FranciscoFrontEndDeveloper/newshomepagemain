@@ -1,13 +1,17 @@
 @import '../../../styles'
 
 nav
-    width: 200px
+    width: 300px
+    background: $Off-white
+    height: 100%
+    position: absolute
+    top: 0
+    right: 0
 ul
     display: flex
     flex-direction: column
     flex-wrap: nowrap
     justify-content: space-between
-    background: pink
 li
     a
         text-decoration: none
@@ -15,6 +19,7 @@ li
 @media screen and ( min-width: 1440px )
     nav
         width: 500px
+        position: inherit
         ul
             flex-direction: row
             justify-content: space-between
