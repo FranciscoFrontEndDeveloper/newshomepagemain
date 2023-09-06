@@ -1,17 +1,30 @@
 @import '../../../styles'
 
 nav
-    width: 300px
-    background: $Off-white
+    width: 100%
+    background-color: rgba(0,0,0,0.5)
     height: 100%
     position: absolute
     top: 0
     right: 0
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+div
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    background: $Off-white
+    width: 65%
 ul
     display: flex
     flex-direction: column
     flex-wrap: nowrap
-    justify-content: space-between
+    justify-content: start
+    background: $Off-white
+    width: 65%
+    height: 100%
+    padding-top: 100px
 li
     a
         text-decoration: none
@@ -20,6 +33,7 @@ li
     nav
         width: 500px
         position: inherit
+        background: $Off-white
         ul
             flex-direction: row
             justify-content: space-between
