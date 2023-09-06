@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.sass']
 })
 export class NavbarComponent {
-
+  hiddenMenu() {
+    console.log('cierra el menu')
+  }
 }
