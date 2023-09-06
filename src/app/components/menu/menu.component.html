@@ -6,8 +6,7 @@
   </div>
   <div>
     <input
-      class="showInput"
-      [ngClass]="{ hiddenInput: desActivateMenu }"
+      [ngClass]="{ hiddenInput: desActivateMenu, showInput: activateMenu }"
       (click)="showMenu()"
       type="image"
       src="../../../assets/icon-menu.svg"
@@ -17,7 +16,7 @@
       <img src="../../../assets/icon-menu.svg" alt="icon-menu" />
     </picture> -->
     <div [ngClass]="{ containerNav: activateMenu }">
-      <app-navbar></app-navbar>
+      <app-navbar (hiddenMenuBoolean)="hiddenMenu($event)"></app-navbar>
     </div>
   </div>
 </header>
