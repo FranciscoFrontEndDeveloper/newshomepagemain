@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent {
   activateMenu: boolean = true
+  desActivateMenu: boolean = false
 
   showMenu() {
     this.activateMenu = !this.activateMenu
+    this.desActivateMenu = !this.desActivateMenu
     console.log(this.activateMenu)
   }
 }

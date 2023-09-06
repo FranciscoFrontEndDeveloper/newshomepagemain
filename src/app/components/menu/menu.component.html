@@ -6,6 +6,8 @@
   </div>
   <div>
     <input
+      class="showInput"
+      [ngClass]="{ hiddenInput: desActivateMenu }"
       (click)="showMenu()"
       type="image"
       src="../../../assets/icon-menu.svg"
