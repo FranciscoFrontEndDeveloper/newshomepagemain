@@ -26,12 +26,17 @@ ul
     height: 100%
     padding-top: 100px
 li
+    padding: 20px
     a
         text-decoration: none
+        text-transform: capitalize
+        color: #000
+        &:hover
+            color: $Softred
 
 @media screen and ( min-width: 1440px )
     nav
-        width: 500px
+        width: 700px
         position: inherit
         background: $Off-white
         ul
@@ -40,5 +45,11 @@ li
             flex-wrap: nowrap
             background: $Off-white
             height: auto
+            width: 100%
+        li
+            padding: 20px 0px 20px 0px
         div
             display: none
+        a
+            color: $Darkgrayishblue
+            font-size: 1.5rem
