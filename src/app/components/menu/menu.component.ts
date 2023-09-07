@@ -15,7 +15,6 @@ export class MenuComponent {
   }
 
   hiddenMenu(closedMenu: boolean) {
-    // this.activateMenu = closedMenu;
     this.activateMenu = !this.activateMenu;
     this.desActivateMenu = !this.desActivateMenu;
   }

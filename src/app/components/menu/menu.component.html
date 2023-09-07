@@ -9,12 +9,9 @@
       [ngClass]="{ hiddenInput: desActivateMenu, showInput: activateMenu }"
       (click)="showMenu()"
       type="image"
-      src="../../../assets/icon-menu.svg"
+      src="assets/icon-menu.svg"
       alt="icon-menu"
     />
-    <!-- <picture>
-      <img src="../../../assets/icon-menu.svg" alt="icon-menu" />
-    </picture> -->
     <div [ngClass]="{ containerNav: activateMenu }">
       <app-navbar (hiddenMenuBoolean)="hiddenMenu($event)"></app-navbar>
     </div>
